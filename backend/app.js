@@ -23,7 +23,6 @@ const allowedOrigins = [
   // "https://expense-tracker-app-three-beryl.vercel.app",
   "http://localhost:3000", 
   "http://127.0.0.1:3000"
-  // add more origins as needed
 ];
 
 // Middleware

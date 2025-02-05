@@ -24,10 +24,16 @@ const Particle = () => {
       options={{
         fullScreen: {
           enable: true,
-          fullScreen: false,
+          // fullScreen: false,
         },
         background: {
-          color: { value: '#000' },
+          color: { value: '#FFFFFF' },
+        },
+        backgroundMask: {
+          enable: true,
+          cover: {
+            color: "#FFFFFF",
+          },
         },
         fpsLimit: 60,
         particles: {
@@ -39,7 +45,7 @@ const Particle = () => {
             },
           },
           color: {
-            value: '#ffcc00',
+            value: '#000000',
           },
           shape: {
             type: 'circle',
