@@ -41,12 +41,26 @@ export const registerControllers = async (req, res, next) => {
             user: newUser
         });
     }
-    catch(err){
+    // catch(err){
+    //     console.error("Error in registerControllers:", err.message);
+    //     console.error(err.stack); 
+    //     console.log(err); 
+    //     console.log("error while signing up...r")
+    //     return res.status(500).json({
+    //         success: false,
+    //         message: err.message,
+    //     });
+    // }
+    catch (err) {
+        console.error("Error in registerControllers:", err.message);
+        console.error(err.stack); // Log the full stack trace for better debugging
+        console.log("Error while signing up...");
         return res.status(500).json({
             success: false,
             message: err.message,
         });
     }
+    
 
 }
 export const loginControllers = async (req, res, next) => {
