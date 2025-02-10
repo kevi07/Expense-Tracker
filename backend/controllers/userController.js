@@ -5,7 +5,7 @@ export const registerControllers = async (req, res, next) => {
     try{
         const {name, email, password} = req.body;
 
-        console.log(name, email, password);
+        // console.log(name, email, password);
 
         if(!name || !email || !password){
             return res.status(400).json({
@@ -41,26 +41,12 @@ export const registerControllers = async (req, res, next) => {
             user: newUser
         });
     }
-    // catch(err){
-    //     console.error("Error in registerControllers:", err.message);
-    //     console.error(err.stack); 
-    //     console.log(err); 
-    //     console.log("error while signing up...r")
-    //     return res.status(500).json({
-    //         success: false,
-    //         message: err.message,
-    //     });
-    // }
-    catch (err) {
-        console.error("Error in registerControllers:", err.message);
-        console.error(err.stack); // Log the full stack trace for better debugging
-        console.log("Error while signing up...");
+    catch(err){
         return res.status(500).json({
             success: false,
             message: err.message,
         });
     }
-    
 
 }
 export const loginControllers = async (req, res, next) => {
