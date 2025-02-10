@@ -8,13 +8,15 @@ Ensure you have the following installed:
 
 Node.js (v16+ recommended)
 npm or yarn
+
+
 Git
 🔹 Installation Steps
 Clone the Repository
 
 
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/kevi07/Expense-Tracker.git
+cd Expense-Tracker
 Install Dependencies
 
 npm install
