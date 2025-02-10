@@ -1,5 +1,6 @@
 // const host = "http://localhost:5050";
-const host = "https://expense-tracker-backend-b87v.onrender.com"
+// const host = "https://expense-tracker-backend-b87v.onrender.com";
+const host = "https://trackit-backend-ravx.onrender.com";
 export const setAvatarAPI = `${host}/api/auth/setAvatar`;
 export const registerAPI = `${host}/api/auth/register`;
 export const loginAPI = `${host}/api/auth/login`;
