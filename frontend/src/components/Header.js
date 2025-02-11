@@ -113,7 +113,7 @@ const navigate = useNavigate();
       />
     <Navbar className="navbarCSS" collapseOnSelect expand="lg" style={{position: 'relative', zIndex: "2 !important"}}>
       {/* <Navbar className="navbarCSS" collapseOnSelect expand="lg" bg="dark" variant="dark"> */}
-        <Navbar.Brand href="/" className="text-white navTitle">Expense Management System</Navbar.Brand>
+        <Navbar.Brand href="/" className="text-white navTitle">TrackIt Expense Management System</Navbar.Brand>
         <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             style={{
